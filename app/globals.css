@@ -1,0 +1,41 @@
+/* 전역 스타일링 (/global.css) */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f9;
+}
+
+
+@layer components {
+  .whiteBox-primary {
+    @apply flex flex-col w-[40em] bg-slate-50;
+  }
+}
+
+
+@layer components {
+  .btn-primary {
+    @apply w-[4em] h-[2em] rounded-md bg-rose-400 text-slate-50 hover:cursor-pointer ;
+  }
+}
